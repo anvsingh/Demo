@@ -6,7 +6,8 @@ public class Contact {
     @ApiModelProperty(notes="unique id only")
     private String id;
     private String name;
-    private String phone;
+    @ApiModelProperty(notes="Mobile number was in string updating it to int")
+    private int phone;
 
     public String getId() {
         return id;
@@ -33,15 +34,15 @@ public class Contact {
                 '}';
     }
 
-    public String getPhone() {
+    public int getPhone() {
         return phone;
     }
 
-    public void setPhone(String phone) {
+    public void setPhone(int phone) {
         this.phone = phone;
     }
 
-    public Contact(String id, String name, String phone) {
+    public Contact(String id, String name, int phone) {
         this.id = id;
         this.name = name;
         this.phone = phone;
