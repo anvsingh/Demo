@@ -11,7 +11,7 @@ import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import java.util.Collections;
-
+//basic swagger2 example
 @SpringBootApplication
 @EnableSwagger2
 public class DemoApplication {
